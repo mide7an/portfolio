@@ -6,7 +6,7 @@
 * 기업형 웹 프로젝트(국립과천과학관)
     + http://mide7an.mycafe24.com/
 * 모바일 웹 프로젝트(국립과천과학관) 
-    + http://mide7an.mycafe24.com/media/
+    + http://mide7an.mycafe24.com/mobile/
 * 반응형 웹 프로젝트(그리스) 
     + http://mide7an.mycafe24.com/media/
 * 프로필 및 포트폴리오 링크
