@@ -18,7 +18,7 @@
 * CSS(less/sass)
 * JavaScript(ES6), JQuery, (Ajax & Json)
 * Git & Github
-* Photoshop/Illustrator/Figma
+* Photoshop/Illustrator/Figma/Indesign
 
 ### ⚠️ 웹 표준 / 웹 접근성
 * W3C 마크업검사 및 css검사 완료 
