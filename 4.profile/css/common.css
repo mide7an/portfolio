@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Orbitron:wght@400..900&family=Sunflower:wght@300;500;700&display=swap');
+
+
+/* font-family: "Noto Sans KR", sans-serif; */
+/* font-family: "Roboto", sans-serif; */
+
+:root{
+  --font-size-h2:5rem;
+  --font-size-h3:3rem;
+  --font-size-h4:2rem;
+  --font-size-h5:1.5rem;
+  --font-size-h6:1.2rem;
+
+  --font-color-main:#053863;
+  --font-color-point1:#01a5e0;
+  --font-color-point2:#ffc400;
+  --font-color-point3:#0dcdfd;
+}
+
+
+
+/*  Reset CSS  */
+* { margin:0;  padding:0;}
+ol,ul { list-style: none; }
+a { outline:0; text-decoration:none; color:#555; }
+img { border:0;}
+html{ font-size: 16px;}
+body { color:#333; box-sizing: border-box;
+ } 
+.hidden{display: block; position: absolute;
+ left: -1000%; width: 1px; height: 1px;
+  overflow: hidden; color: #fff}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}  
+
+
+    
+
+
+
+
+/*로고*/
+h1 { position:fixed; top:50px; left:50px; z-index:10;}
+h1 img { width:200px; height:auto;}
+
+/*sns*/
+#sns { position:fixed; top:40px; right:50px; z-index:14; overflow: hidden;}
+#sns li { float:left; margin-left:20px;}
+#sns li i { font-size:25px; color:#111; opacity:0.5;transition:all 0.5s;}
+#sns li i:hover { transform:scale(1.5); opacity:1;}
+
+/*메뉴*/
+#menu { position:fixed; top:50%; left:0px; margin-top:-150px; z-index:13; margin-left: 50px; font-family: 'Instrument Sans'}
+#menu a { display:block; width:300px; height:60px; font-size:1.3rem; color:#666; 
+     text-align:left; overflow:hidden; box-sizing:border-box;  
+     opacity:0.8; transition:all 0.5s; display: flex; align-items: center;}
+#menu li{position: relative; padding-left: 50px;}     
+#menu li::after{content: '';background:url(../images/home02.png) center no-repeat ;background-size: cover; position: absolute; 
+    left: 0; top: 50%; width: 40px;  height: 40px;  margin-top: -20px; 
+transition: transform 0.4s ease-out; 
+    /* 현재 각도 유지 */
+    transform: rotate(0deg);}     
+#menu li:hover a { font-size:1.6rem;  opacity:1; color:#008000; }
+#menu li.on a { font-size:1.6rem; opacity:1; color:green;}
+#menu li:hover::after {
+    transform: rotate(30deg); /* 시계 방향으로 15도 회전 */
+}
+
+/* 🟢 on 클래스 시: 회전 상태 유지 */
+#menu li.on::after {
+    transform: rotate(30deg);
+}
+
+
+
+
+/*레이아웃*/
+section { min-width: 1850px; height:auto; position:relative; 
+     background-size:cover; background-position:right center;
+     overflow:hidden; display: flex;flex-direction: column; justify-content: center; align-items: center; 
+     padding-left: 50px;
+}
+
+section h2{font-size: 9rem; z-index: 3; font-family: 'Instrument Sans'}
+
+.home {
+/* background: linear-gradient(to top, #499c5e, #499c5e);
+background: -webkit-linear-gradient(to top, #499c5e, #499c5e); */
+background-color: #000; }
+    
+.home .main{background: url(../images/home01.png) right center no-repeat; padding: 100px; z-index: 10;  width: 700px; }
+.home h2{color: #000; filter: drop-shadow(0 0 20px rgba(255,255,255,1)); margin-bottom: 30px; text-align: center;}
+.home p:nth-of-type(1){font-size: 2rem; text-align: center; margin-bottom: 20px; color: green;}
+.home p:nth-of-type(2){}
+.typing-container{text-align: center;}
+.text-focus-in {
+	/* -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; */
+            font-size: 1.5rem; text-align: center;  color: #999;  
+}
+
+
+
+
+
+
+/* 배경 */
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    /* 25s / 3 = 8.33s (기본 속도) */
+    animation: animate 8.33s linear infinite;
+    bottom: -150px;
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    /* 0s / 3 = 0s */
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    /* 2s / 3 = 0.67s */
+    animation-delay: 0.67s;
+    /* 12s / 3 = 4s */
+    animation-duration: 4s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    /* 4s / 3 = 1.33s */
+    animation-delay: 1.33s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    /* 18s / 3 = 6s */
+    animation-duration: 6s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    /* 3s / 3 = 1s */
+    animation-delay: 1s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    /* 7s / 3 = 2.33s */
+    animation-delay: 2.33s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    /* 15s / 3 = 5s */
+    animation-delay: 5s;
+    /* 45s / 3 = 15s */
+    animation-duration: 15s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    /* 2s / 3 = 0.67s */
+    animation-delay: 0.67s;
+    /* 35s / 3 = 11.67s */
+    animation-duration: 11.67s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    /* 11s / 3 = 3.67s */
+    animation-duration: 3.67s;
+}
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 30%;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+
+
+.profile{background: #f1f1f1;}
+
+/* 이름 텍스트 (.name-reveal)를 위한 단어 단위 슬라이드 업 스타일 */
+
+/* 1. 단어 컨테이너 (.word-clip)의 기본 상태 설정 */
+.name-reveal .word-clip {
+    display: inline-block;
+    /* 단어가 아래에서 올라올 때 부드럽게 나타나도록 overflow: hidden 처리 */
+    overflow: hidden; 
+    white-space: nowrap; /* 단어가 줄바꿈되지 않도록 */
+}
+
+/* 2. 애니메이션 시작 전 초기 상태: 텍스트를 아래로 100% 이동시켜 숨김 */
+.name-reveal .word-clip span {
+    display: block; 
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+/* 3. 애니메이션 정의: 아래에서 위로 올라오며 투명도 회복 */
+@keyframes slideUpRevealWord {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* 4. .is-animated 클래스 적용 시 애니메이션 실행 */
+.name-reveal.is-animated .word-clip span {
+    /* 1초 동안 부드럽게 진행, 완료 상태 유지 */
+    animation: slideUpRevealWord 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+
+
+/* 이름 텍스트 (.name-reveal) 애니메이션 CSS는 그대로 유지됩니다. */
+/* ... (기존 이름 애니메이션 CSS 생략) ... */
+
+/* ------------------------------------------------------------------ */
+/* [수정] 사진 (.photo-reveal) 등장 애니메이션 스타일: Clip-Path 적용 */
+/* ------------------------------------------------------------------ */
+
+.photo-reveal {
+    /* clip-path가 제대로 작동하도록 기본 속성 설정 */
+    display: inline-block; 
+    
+    /* 애니메이션 시작 전 초기 상태: 수직 중앙선을 기준으로 100% 가려진 상태 */
+    clip-path: inset(0 50% 0 50%); /* top right bottom left */
+    transition: clip-path 1.2s cubic-bezier(0.86, 0, 0.07, 1); /* 부드러운 애니메이션을 위한 Transition 설정 */
+    
+    /* 초기 투명도를 0으로 설정하여 깜박임을 방지하고 부드럽게 시작 (선택 사항) */
+    opacity: 0;
+    transition-delay: 0.1s; /* clip-path 애니메이션 시작 후 투명도 변화 시작 */
+    transition-property: clip-path, opacity;
+}
+
+/* .is-loaded 클래스 적용 시: 마스크가 완전히 열려서 사진 전체가 드러남 */
+.photo-reveal.is-loaded {
+    /* 마스크가 완전히 열린 상태: 0% 가려진 상태 */
+    clip-path: inset(0 0 0 0); 
+    opacity: 1; /* 완전히 불투명하게 만듦 */
+}
+
+.profile .cotainer{width: 1100px; height: 768px; display: flex; background: url(../images/profile02.png) center no-repeat; justify-content: center; box-sizing: border-box; align-items: center; padding: 100px;}
+.profile .photo{ border-radius: 30px; overflow: hidden;  flex-shrink: 0; height: 500px;}
+.profile .photo img{ }
+.profile .content {margin-left: 50px;}
+.profile .content>p{color: #000; font-size:4rem ; margin-bottom: 40px; font-family: "Orbitron", sans-serif; ; font-weight: 700; margin-top: 10px;}
+.profile .content ul li {margin-bottom: 30px;}
+.profile .content ul li span{color: #008000; font-size:1.7rem ; font-weight: 600; font-family: 'Instrument Sans'}
+.profile .content ul li p{color: #333; font-size:1.3rem ;}
+.profile .viewsite{display: flex; align-items: center; justify-content: center; width: 100%;}
+.profile .viewsite a{width: 180px;height: 50px;color: #000; font-size: 1.2rem;  background: #999; border-radius: 30px;display: flex; justify-content: center; align-items: center; margin-right: 10px; box-sizing: border-box;
+background-image: 
+        linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.2) 50%),
+        linear-gradient(to bottom, #ffffff, #eeeeee, #cccccc);
+
+    /* 2. 패턴의 크기 설정 (줄무늬 두께와 그라데이션 크기) */
+    background-size: 2px 100%, 100% 100%;
+    
+    /* 3. 그림자 및 기타 스타일은 위와 동일하게 적용 */
+    box-shadow: 
+        0 1px 0 rgba(255, 255, 255, 0.7) inset, 
+        0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;  }
+        
+.profile .viewsite a:hover {
+    /* 1. 배경을 더 확실하게 밝게/어둡게 변경하여 대비 강화 */
+    background-image: 
+        /* 브러시드 패턴은 그대로 유지하거나 투명도를 높여 더 잘 보이게 */
+        linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.4) 50%), 
+        /* 그라데이션 색상을 더 확실히 밝게 변화 */
+        linear-gradient(to bottom, #f0f0f0, #d5d5d5, #aaaaaa); 
+    
+    /* 2. 그림자를 변경하여 눌리는 느낌을 확실히 부여 */
+    /* 기존 그림자 제거 (inset 하이라이트를 제거하거나 약화) */
+    box-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.5) inset, /* 밝은 하이라이트 약화 */
+        0 0 1px rgba(0, 0, 0, 0.1); /* 외부 그림자도 약화 */
+    
+    /* 3. 더 확실히 줄여서 눌리는 효과를 시각적으로 강화 */
+    transform: scale(0.97); /* 0.99 대신 0.97로 변경 */
+    color: #008000;
+}
+
+ /* 배경   */
+/* .profile {  
+ 
+  background: linear-gradient(-45deg, #bbfab2, #c2faa1, #60f56d, #84f584);
+ background-size: 400% ;
+ animation: gradient 10s ease infinite;
+ height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}  */
+
+
+
+
+
+.web_mobile { background: url(../images/home01.png) right bottom no-repeat; }
+.web_mobile .title{font-size: 1.5rem; font-weight: 600;  width: 1100px; padding-left: 70px; display: flex; align-items: center; height: 50px; 
+   color: #666; position: relative;}
+.web_mobile .title::after{content:'01'; left:0; top:0; position: absolute; color: #fff; 
+    width: 50px; height: 50px; display: flex ;align-items: center; justify-content: center; background: #01a5e0; box-sizing: border-box; 
+}
+.web_mobile .container{ display: flex; justify-content: center; align-items: center;}
+.web_mobile .photo{position: relative; }
+.web_mobile .moniter{padding-bottom: 100px;}
+.web_mobile .moniter .web_gif{position: absolute; top: 117px; left: 48px; }
+.web_mobile .moniter .web_gif img{width: 511px;}
+.web_mobile .phone {position: absolute; bottom: 50px; left: 50px; }
+.web_mobile .content{margin-left: 30px;}
+.web_mobile .content>p:nth-of-type(1){font-size: 3.5rem;  font-family: 'Sunflower', sans-serif;  font-weight: 400; color: #053863; margin-top: -70px; margin-bottom: 20px;}
+.web_mobile .content .desc{line-height: 1.5rem;}
+.web_mobile .part {display: flex; margin: 30px 0; }
+.web_mobile .part li{display: flex; margin-right: 50px; align-items: center;}
+.web_mobile .part li strong{ margin-right: 10px; display: flex; align-items: center;}
+.web_mobile .part li span{width: 40px; height: 40px; border-radius: 50%; margin-right: 5px;}
+.web_mobile .part li span:nth-of-type(1){background: #053863;}
+.web_mobile .part li span:nth-of-type(2){background: #ffc400;}
+.web_mobile .part li span:nth-of-type(3){background: #01a5e0;}
+.web_mobile .viewsite{display: flex; align-items: center; margin-top: 70px; }
+.web_mobile .viewsite a{width: 180px;height: 50px; color: #000; font-size: 1.2rem;  background: #999; border-radius: 30px;display: flex; justify-content: center; align-items: center; margin-right: 10px; box-sizing: border-box;
+background-image: 
+        linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.2) 50%),
+        linear-gradient(to bottom, #ffffff, #eeeeee, #cccccc);
+
+    /* 2. 패턴의 크기 설정 (줄무늬 두께와 그라데이션 크기) */
+    background-size: 2px 100%, 100% 100%;
+    
+    /* 3. 그림자 및 기타 스타일은 위와 동일하게 적용 */
+    box-shadow: 
+        0 1px 0 rgba(255, 255, 255, 0.7) inset, 
+        0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;  }
+        
+.web_mobile .viewsite a:hover {
+    /* 1. 배경을 더 확실하게 밝게/어둡게 변경하여 대비 강화 */
+    background-image: 
+        /* 브러시드 패턴은 그대로 유지하거나 투명도를 높여 더 잘 보이게 */
+        linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.4) 50%), 
+        /* 그라데이션 색상을 더 확실히 밝게 변화 */
+        linear-gradient(to bottom, #f0f0f0, #d5d5d5, #aaaaaa); 
+    
+    /* 2. 그림자를 변경하여 눌리는 느낌을 확실히 부여 */
+    /* 기존 그림자 제거 (inset 하이라이트를 제거하거나 약화) */
+    box-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.5) inset, /* 밝은 하이라이트 약화 */
+        0 0 1px rgba(0, 0, 0, 0.1); /* 외부 그림자도 약화 */
+    
+    /* 3. 더 확실히 줄여서 눌리는 효과를 시각적으로 강화 */
+    transform: scale(0.97); /* 0.99 대신 0.97로 변경 */
+    color: #008000;
+}
+.web_mobile .viewsite img{width: 90px; height: 90px; margin-left: 30px;}
+
+
+
+
+.responsive { /* 1. 이미지 및 기타 설정 (background-image, background-repeat, background-position) */
+    background: url(../images/home01.png) right bottom no-repeat;
+    background-color: #f1f1f1;  }
+.responsive .title{font-size: 1.5rem; font-weight: 600;  width: 1100px; padding-left: 70px; display: flex; align-items: center; height: 50px; 
+   color: #666; position: relative;}
+.responsive .title::after{content:'02'; left:0; top:0; position: absolute; color: #fff; 
+    width: 50px; height: 50px; display: flex ;align-items: center; justify-content: center; background: #1E5A93; box-sizing: border-box; 
+}
+.responsive .container{ display: flex; justify-content: center; align-items: center;}
+.responsive .photo{position: relative; }
+.responsive .moniter{padding-bottom: 100px;}
+.responsive .moniter .web_gif{position: absolute; top: 117px; left: 48px; }
+.responsive .moniter .web_gif img{width: 511px;}
+.responsive .phone {position: absolute; bottom: 50px; left: 50px; }
+.responsive .content{margin-left: 30px;}
+.responsive .content>p:nth-of-type(1){font-size: 3.5rem;  font-family: 'Sunflower', sans-serif;  font-weight: 400; color: #2e86c1; margin-top: -70px; margin-bottom: 20px;}
+.responsive .content .desc{line-height: 1.5rem;}
+.responsive .part {display: flex; margin: 30px 0; }
+.responsive .part li{display: flex; margin-right: 50px; align-items: center;}
+.responsive .part li strong{ margin-right: 10px; display: flex; align-items: center;}
+.responsive .part li span{width: 40px; height: 40px; border-radius: 50%; margin-right: 5px;}
+.responsive .part li span:nth-of-type(1){background: #2e86c1;}
+.responsive .part li span:nth-of-type(2){background: #75B240;}
+.responsive .part li span:nth-of-type(3){background: #1E5A93;}
+.responsive .viewsite{display: flex; align-items: center; margin-top: 70px;  }
+.responsive .viewsite a{width: 180px;height: 50px; color: #000; font-size: 1.2rem;  background: #999; border-radius: 30px;display: flex; justify-content: center; align-items: center; margin-right: 10px; box-sizing: border-box;
+background-image: 
+        linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.2) 50%),
+        linear-gradient(to bottom, #ffffff, #eeeeee, #cccccc);
+
+    /* 2. 패턴의 크기 설정 (줄무늬 두께와 그라데이션 크기) */
+    background-size: 2px 100%, 100% 100%;
+    
+    /* 3. 그림자 및 기타 스타일은 위와 동일하게 적용 */
+    box-shadow: 
+        0 1px 0 rgba(255, 255, 255, 0.7) inset, 
+        0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;  }
+        
+.responsive .viewsite a:hover {
+    /* 1. 배경을 더 확실하게 밝게/어둡게 변경하여 대비 강화 */
+    background-image: 
+        /* 브러시드 패턴은 그대로 유지하거나 투명도를 높여 더 잘 보이게 */
+        linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.4) 50%), 
+        /* 그라데이션 색상을 더 확실히 밝게 변화 */
+        linear-gradient(to bottom, #f0f0f0, #d5d5d5, #aaaaaa); 
+    
+    /* 2. 그림자를 변경하여 눌리는 느낌을 확실히 부여 */
+    /* 기존 그림자 제거 (inset 하이라이트를 제거하거나 약화) */
+    box-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.5) inset, /* 밝은 하이라이트 약화 */
+        0 0 1px rgba(0, 0, 0, 0.1); /* 외부 그림자도 약화 */
+    
+    /* 3. 더 확실히 줄여서 눌리는 효과를 시각적으로 강화 */
+    transform: scale(0.97); /* 0.99 대신 0.97로 변경 */
+    color: #008000;
+}
+
+.responsive .viewsite img{width: 90px; height: 90px; margin-left: 30px;}
+
+
+
+
+
+
+
+
+
+
+.editorial {
+    width: 100%; 
+    height: auto; 
+    position: relative; 
+    background-color: #000;
+    background-size: cover; 
+    background-position: right center;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+  
+    /* background-attachment: fixed; 를 사용할 경우 주석 해제 */
+}
+
+/* 2. PDF 뷰어 컨테이너 스타일 */
+.editorial .pdf-container {
+    /* 가로 100%를 유지하되, 지나치게 커지는 것을 방지하기 위한 최대 너비 설정 */
+    max-width: 1450px; 
+    width: 90%; /* 화면에 약간의 여백을 두어 보기 좋게 만듭니다. */
+    /* margin: 40px auto; */ /* 위아래 여백과 중앙 정렬 */
+    box-sizing: border-box; /* 패딩과 테두리가 너비에 포함되도록 */
+    margin-left: 200px;
+}
+
+/* 3. PDF 뷰어 (iframe) 자체의 스타일 */
+.editorial .pdf-viewer {
+    /* 부모 컨테이너(90%)를 꽉 채우도록 100% 설정 */
+    width: 100%; 
+    /* 핵심: 높이(Height)를 충분히 늘려야 크게 보입니다. */
+    height:800px; 
+    
+    border: 1px solid #ddd; /* 뷰어 경계선 */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* 그림자 효과로 입체감 부여 */
+
+   
+}
+
+
+
+
+
+
+
