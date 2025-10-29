@@ -1,0 +1,1075 @@
+/* 와이드 pc  */
+
+
+.videoBox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute
+}
+
+#imgBG {
+  position: fixed;
+  /*고정=>fixed/ 스크롤처리=>absolute */
+  left: 50%;
+  top: 50%;
+  /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+  width: auto;
+  min-width: 100%;
+  /*동영상 너비를 꽉차게*/
+  height: auto;
+  min-height: 100%;
+  /*동영상 높이를 꽉차게*/
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -100;
+}
+
+/* 스크롤다운 */
+
+.scroll_down_button {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+  font-size: 1.5rem;
+  z-index: 10;
+}
+
+.scroll_down_button:hover {
+  transform: translateX(-50%) scale(1.1);
+}
+
+.arrow {
+  color: white;
+  width: 30px;
+  height: 30px;
+  animation: down 1.5s infinite;
+}
+
+@keyframes down {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(10px);
+  }
+
+  60% {
+    transform: translateY(5px);
+  }
+}
+
+
+
+/* 갤러리체인지 */
+
+.gastronomybox {
+  width: 85%;
+  margin: 50px auto;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+}
+
+.gastronomybox .box {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: width .5s, left .5s;
+  background-size: cover;
+  background-position: center;
+}
+
+.gastronomybox .box1 {
+  background: url(../images/sub2/sub2_1.jpg) center;
+  left: 0;
+  background-size: cover;
+}
+
+.gastronomybox .box2 {
+  background: url(../images/sub2/sub2_2.jpg) center;
+  left: 20%;
+  background-size: cover;
+}
+
+.gastronomybox .box3 {
+  background: url(../images/sub2/sub2_3.jpg) center;
+  left: 50%;
+  background-size: cover;
+}
+
+.gastronomybox .box4 {
+  background: url(../images/sub2/sub2_4.jpg) center;
+  left: 75%;
+  background-size: cover;
+}
+
+#contents .gastronomybox ul {
+  overflow: hidden;
+  height: 600px;
+}
+
+.gastronomybox ul li {
+  width: 25%;
+  height: 600px;
+  float: left;
+  background-size: cover;
+}
+
+.gastronomybox ul li:nth-child(1) {
+  background: url(../images/sub2/sub2_s1.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.gastronomybox ul li:nth-child(2) {
+  background: url(../images/sub2/sub2_s2.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.gastronomybox ul li:nth-child(3) {
+  background: url(../images/sub2/sub2_s3.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.gastronomybox ul li:nth-child(4) {
+  background: url(../images/sub2/sub2_s4.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.gastronomybox ul .btn {
+  color: #fff;
+  font-size: 2.5rem;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  z-index: 20;
+  height: 600px;
+  padding: 50px;
+  line-height: 3.1rem;
+  font-weight: 600;
+  text-align: center;
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#contents {
+  width: 100%;
+  margin: 0 auto;
+  background: #f5f3d4;
+  padding: 170px 0 0;
+  overflow: hidden;
+}
+
+#contents h2 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  font-size: 6rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+#contents h2 span {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-left: 15px;
+}
+
+#contents section {
+  margin: 200px 0;
+}
+
+#contents section h3 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+#contents section h4 {
+  font-weight: 550;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--font-color-sub1);
+}
+
+#contents .desc {
+  text-align: center;
+}
+
+#contents .sub_title {
+  font-size: 1.88rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  padding: 10px 0 10px;
+  display: block;
+  text-align: center;
+}
+
+#contents .cuisine h3 {
+  margin-top: 150px;
+}
+
+.cuisine .cuisine_box {
+  margin: 10px 170px 250px;
+  padding-bottom: 100px;
+}
+
+.cuisine .swiper-wrapper {
+  width: 100%;
+  margin-bottom: -20px;
+}
+
+.cuisine .swiper-slide {
+  border: 3px solid var(--font-color-point1);
+}
+
+.cuisine .swiper-slide img {
+  width: 100%;
+}
+
+.cuisine .swiper-pagination-bullets {
+  bottom: 40px !important;
+  width: 100%;
+  text-align: center;
+}
+
+.cuisine .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  background: var(--font-color-point1);
+  margin: 0 15px;
+}
+
+
+
+.cuisine .swiper-button-next,
+.cuisine .swiper-button-prev {
+  top: auto;
+  bottom: 50%;
+  color: var(--font-color-point1);
+}
+
+#contents .cuisine .skiathos {
+  width: 100%;
+  background: url(../images/sub2/sub2_10.jpg) center no-repeat;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.cuisine .skiathos h4 {
+  color: #333;
+}
+
+.cuisine .skiathos .desc {
+  color: #fff;
+  filter: drop-shadow(0 0 15px var(--font-color-sub1));
+  width: 70%;
+  margin: 0 auto;
+}
+
+.cuisine .skiathos .sub_title {
+  margin-bottom: 30px;
+}
+
+.cuisine .skiathos p {
+  margin-bottom: 30px;
+}
+
+
+.products {
+  width: 100%;
+}
+
+.products .desc {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.productsbox {
+  width: 70%;
+  margin: 0 auto 50px;
+  position: relative;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.products .charbox {
+  width: 63%;
+  border-radius: 100px 20px 20px 100px;
+  overflow: hidden;
+  position: relative;
+}
+
+.products .charbox::after {
+  content: '';
+  background: #fff;
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, .5) inset;
+}
+
+.products .charbox img {
+  width: 100%;
+  object-fit: cover;
+  opacity: 0;
+}
+
+.products .desc .sub_title {
+  margin-bottom: 30px;
+}
+
+
+.products .charbox img.animate-in {
+  animation: products 1s forwards;
+}
+
+@keyframes products {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.products .gallery-thumbs {
+  width: 40%;
+}
+
+.products .gallery-thumbs ul {
+  overflow: hidden;
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.products .gallery-thumbs ul li {
+  width: 48%;
+}
+
+.products .gallery-thumbs ul li a {
+  display: block;
+  filter: grayscale(100%);
+  transition: all 1s ease-out;
+}
+
+.products .gallery-thumbs ul li img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.wines .wine {
+  width: 100%;
+}
+
+.wines .swiper-wrapper {
+  width: 100%;
+}
+
+.wines .swiper-slide {
+  width: 100%;
+  position: relative;
+}
+
+.wines .swiper-slide .desc {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  color: #fff;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  filter: drop-shadow(0 0 15px var(--font-color-sub1));
+  padding: 0 15%;
+}
+
+.wines .swiper-slide h4 {
+  color: #fff !important;
+}
+
+
+
+.wines .wine {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.wines .swiper-button-next,
+.wines .swiper-button-prev {
+
+  --swiper-navigation-size: 50px;
+
+
+  width: 70px;
+  height: 70px;
+
+
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 10px;
+
+}
+
+
+.wines .swiper-button-next,
+.wines .swiper-button-prev {
+  top: auto;
+  bottom: 50%;
+  margin-top: 0;
+  /* 기본 margin-top 무시 */
+}
+
+
+.wines .swiper-pagination-bullets {
+  bottom: 50px !important;
+  width: 100%;
+  text-align: center;
+}
+
+
+.wines .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0 8px;
+}
+
+/* 활성화된 불렛 디자인 */
+.wines .swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.wines .wine img {
+  width: 100%;
+}
+
+.beverages .beveragesbox {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  grid-template-areas:
+    'a a '
+    'b c '
+    'b d';
+}
+
+.beverages .beveragesbox .item {
+  width: 100%;
+  height: 100%;
+}
+
+.beverages .beveragesbox .item1 {
+  grid-area: a;
+}
+
+.beverages .beveragesbox .item2 {
+  grid-area: b;
+  padding: 20px 30px 0 150px;
+}
+
+.beverages .beveragesbox .item3 {
+  grid-area: c;
+}
+
+.beverages .beveragesbox .item4 {
+  grid-area: d;
+  padding-right: 150px;
+}
+
+.beverages .beveragesbox img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+  .wines .wine .desc p:nth-of-type(2) {
+    display: none;
+  }
+
+  .wines .wine .desc br:nth-of-type(1),
+  .wines .wine .desc br:nth-of-type(2) {
+    display: none;
+  }
+
+
+
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+  html {
+    font-size: 18px;
+  }
+
+  .scroll_down_button {
+    font-size: 1.2rem;
+    bottom: 6%;
+    width: 40px;
+    height: 40px;
+  }
+
+  .arrow {
+    width: 25px;
+    height: 25px;
+  }
+
+  @keyframes down {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+
+    40% {
+      transform: translateY(6px);
+    }
+
+    60% {
+      transform: translateY(5px);
+    }
+  }
+
+  #contents {
+    padding: 100px 0;
+  }
+
+  #contents section {
+    margin: 170px 0;
+  }
+
+  #contents h2 {
+    font-size: 4rem
+  }
+
+  #contents h2 span {
+    font-size: 2.5rem;
+    margin-left: 10px;
+    font-weight: 650;
+  }
+
+  #contents section h3 {
+    padding: 50px 0 50px;
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+
+  #contents section h4 {
+    font-weight: 550;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #contents .sub_title {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+  }
+
+  .gastronomybox {
+    margin: 30px auto;
+    border-radius: 40px;
+  }
+
+  .gastronomybox {
+    height: 500px;
+  }
+
+  .gastronomybox .box {
+    height: 500px;
+  }
+
+  #contents .gastronomybox ul {
+    height: 500px;
+  }
+
+  .gastronomybox ul li {
+    height: 500px;
+  }
+
+  .gastronomybox ul .btn {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .cuisine .cuisine_box {
+    margin: 0 90px;
+  }
+
+  #contents .cuisine .skiathos {
+    width: 100%;
+    background: url(../images/sub2/sub2_10.jpg) center no-repeat;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .cuisine .skiathos .desc {
+    width: 80%;
+  }
+
+  .productsbox {
+    width: 90%;
+  }
+
+  .products .desc {
+    width: 80%;
+  }
+
+  .products .desc p:nth-of-type(5),
+  .products .desc p:nth-of-type(6),
+  .products .desc p:nth-of-type(7) {
+    display: none;
+  }
+
+
+  #contents .wines .swiper-slide .desc .sub_title {
+    font-size: 1.5rem;
+    line-height: 2.0rem;
+    font-weight: 500;
+  }
+
+
+  #contents .wines .swiper-slide .desc p:nth-of-type(3),
+  #contents .wines .swiper-slide .desc p:nth-of-type(4) {
+    display: none;
+  }
+
+  .wines .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 8px;
+  }
+
+  .wines .swiper-pagination-bullets {
+    bottom: 30px !important;
+  }
+
+  .wines .swiper-pagination-bullet-active {
+    background: #fff;
+  }
+
+
+  .wines .swiper-button-next,
+  .wines .swiper-button-prev {
+
+    --swiper-navigation-size: 30px;
+
+
+    width: 50px;
+    height: 50px;
+
+
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-radius: 7px;
+
+  }
+
+
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+  html {
+    font-size: 16px;
+  }
+
+  #contents {
+    padding: 90px 0 0
+  }
+
+  #contents section {
+    margin: 100px 0 70px;
+  }
+
+  #contents h2 {
+    font-size: 3.5rem
+  }
+
+  #contents h2 span {
+    font-size: 2.5rem;
+    margin-left: 5px;
+    font-weight: 600;
+  }
+
+  #contents section h3 {
+    padding: 20px 0 20px;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+  }
+
+  #contents h4 {
+    font-size: 2rem;
+    font-weight: 550;
+  }
+
+  #contents .sub_title {
+    font-size: 1.88rem;
+    line-height: 2.5rem;
+    font-weight: 450;
+    margin-bottom: 5px;
+  }
+
+  .gastronomybox {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .gastronomybox {
+    height: 400px;
+    border-radius: 30px;
+  }
+
+  .gastronomybox .box {
+    height: 400px;
+  }
+
+  #contents .gastronomybox ul {
+    height: 400px;
+  }
+
+  #contents .gastronomybox ul li {
+    height: 400px;
+  }
+
+  .gastronomybox ul .boxbtn {}
+
+  .gastronomybox ul .btn {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+    height: 400px;
+  }
+
+
+
+  .cuisine .cuisine_box {
+    margin: 0 40px 150px;
+  }
+
+  #contents .cuisine .skiathos {
+    width: 100%;
+    background: url(../images/sub2/sub2_10.jpg) center no-repeat;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+  .cuisine .skiathos .desc {
+    width: 90%;
+  }
+
+  .cuisine .skiathos .desc .sub_title {
+    line-height: 2.5rem;
+    font-size: 1.88rem;
+  }
+
+  .cuisine .skiathos .desc p:nth-of-type(3) {
+    display: none;
+  }
+
+  .cuisine .skiathos .desc br:nth-of-type(2) {
+    display: none;
+  }
+
+  .productsbox {
+    width: 85%;
+    margin: 0 auto 30px;
+    flex-direction: column;
+  }
+
+  .products .charbox {
+    width: 85%;
+    margin-bottom: 10px;
+  }
+
+  .products .gallery-thumbs {
+    width: 85%;
+  }
+
+  .products .gallery-thumbs ul {
+    overflow: hidden;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: right;
+  }
+
+  .products .gallery-thumbs ul li {
+    width: 30%;
+  }
+
+  .products .desc p:nth-of-type(3),
+  .products .desc p:nth-of-type(4),
+  .products .desc p:nth-of-type(5) {
+    display: none;
+  }
+
+  .products .desc br:nth-of-type(2),
+  .products .desc br:nth-of-type(3),
+  .products .desc br:nth-of-type(4),
+  .products .desc br:nth-of-type(5) {
+    display: none;
+  }
+
+
+  .wines .wine {
+    width: 100%;
+    padding: 0 0 50px;
+  }
+
+  .wines .wine .desc p {
+    display: none;
+  }
+
+  .wines .swiper-button-next,
+  .wines .swiper-button-prev {
+    --swiper-navigation-size: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-radius: 10px;
+  }
+
+  .wines .swiper-button-next,
+  .wines .swiper-button-prev {
+    top: auto;
+    bottom: 50%;
+    margin-top: 0;
+    /* 기본 margin-top 무시 */
+  }
+
+  .wines .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+    margin: 0 8px;
+  }
+
+  .wines .swiper-pagination-bullets {
+    bottom: 20px !important;
+  }
+
+  .wines .swiper-pagination-bullet-active {
+    background: var(--font-color-point1);
+  }
+
+  .beverages .beveragesbox p:nth-of-type(2),
+  .beverages .beveragesbox p:nth-of-type(3) {
+    display: none;
+  }
+
+  .beverages .beveragesbox br:nth-of-type(1),
+  .beverages .beveragesbox p:nth-of-type(2),
+  .beverages .beveragesbox p:nth-of-type(3) {
+    display: none;
+  }
+
+  .beverages .beveragesbox .item2 {
+    padding: 5px 10px 0 40px;
+  }
+
+  .beverages .beveragesbox .item4 {
+    padding: 0 35px 0 0;
+  }
+
+  #contents .beverages .beveragesbox .item4 .sub_title {
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+}
+
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+  #contents {
+    padding: 70px 0;
+  }
+
+  #contents section {
+    margin: 60px 0 30px;
+  }
+
+  #contents section h3 {
+    padding: 20px 0 0;
+    font-size: 2.5rem;
+  }
+
+  #contents section h4 {
+    font-size: 2rem;
+    font-weight: 550;
+    margin-bottom: 10px;
+    line-height: 2.7rem;
+  }
+
+  #contents .sub_title {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    margin-bottom: 10px;
+    font-weight: 450;
+  }
+
+  .gastronomybox {
+    height: 200px;
+    border-radius: 20px;
+  }
+
+  .gastronomybox .box {
+    height: 200px;
+  }
+
+  #contents .gastronomybox ul {
+    height: 200px !important;
+  }
+
+  .gastronomybox ul li {
+    height: 200px;
+  }
+
+  .gastronomybox ul .btn {
+    height: 200px;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+
+  .cuisine .cuisine_box {
+    margin: 0 20px 70px
+  }
+
+  .cuisine .skiathos {
+    margin-top: 10px;
+    padding-bottom: 0;
+    background-attachment: scroll
+  }
+
+  .cuisine .skiathos .desc p:nth-of-type(2) {
+    display: none;
+  }
+
+  .cuisine .skiathos .desc br:nth-of-type(1) {
+    display: none;
+  }
+
+  .productsbox {
+    width: 90%;
+    margin-bottom: 0;
+  }
+
+  .products .desc p:nth-of-type(2) {
+    display: none;
+  }
+
+  .wines .wine .desc {
+    padding: 5% 15%;
+  }
+
+  #contents .wines .wine .desc .sub_title {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+
+
+
+  .wines .swiper-button-next,
+  .wines .swiper-button-prev {
+    --swiper-navigation-size: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-radius: 10px;
+  }
+
+  .beverages .beveragesbox .item2 {
+    padding: 5px 10px 0 20px;
+  }
+
+  .beverages .beveragesbox .item4 {
+    padding: 0 15px 0 0;
+  }
+
+  #contents .beverages .beveragesbox .item4 .sub_title {
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+
+
+
+
+}

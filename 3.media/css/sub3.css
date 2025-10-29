@@ -1,0 +1,678 @@
+/* 와이드 pc  */
+
+
+.videoBox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute
+}
+
+#imgBG {
+  position: fixed;
+  /*고정=>fixed/ 스크롤처리=>absolute */
+  left: 50%;
+  top: 50%;
+  /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+  width: auto;
+  min-width: 100%;
+  /*동영상 너비를 꽉차게*/
+  height: auto;
+  min-height: 100%;
+  /*동영상 높이를 꽉차게*/
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -100;
+}
+
+/* 스크롤다운 */
+
+.scroll_down_button {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+  font-size: 1.5rem;
+  z-index: 10;
+}
+
+.scroll_down_button:hover {
+  transform: translateX(-50%) scale(1.1);
+}
+
+.arrow {
+  color: white;
+  width: 30px;
+  height: 30px;
+  animation: down 1.5s infinite;
+}
+
+@keyframes down {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(10px);
+  }
+
+  60% {
+    transform: translateY(5px);
+  }
+}
+
+
+
+#contents {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  background: rgba(255, 255, 255, 1);
+  padding: 0 0 170px;
+  overflow: hidden;
+}
+
+#contents h2 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  font-size: 6rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+#contents h2 span {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-left: 15px;
+}
+
+#contents section {
+  margin: 200px 0;
+}
+
+#contents section h3 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+#contents section h4 {
+  font-weight: 550;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--font-color-sub1);
+}
+
+#contents .desc {
+  text-align: center;
+  margin: 0 250px 50px;
+}
+
+#contents .sub_title {
+  font-size: 1.88rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  padding: 10px 0 10px;
+  display: block;
+  text-align: center;
+}
+
+/* 스와이퍼 */
+#contents .swiper-container .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background: #333;
+  opacity: .7;
+  margin: 0 8px;
+}
+
+#contents .swiper-container .swiper-pagination-bullets {
+  opacity: 1;
+  bottom: 20px !important;
+  width: 100%;
+  text-align: center;
+}
+
+#contents .swiper-container .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: var(--font-color-point1);
+}
+
+
+
+#contents img {
+  width: 100%;
+}
+
+#contents .mountains {
+  background: url(../images/sub3/sub3_6.svg) no-repeat;
+  background-position: 100% 30%;
+}
+
+#contents .mountains .mountain {
+  width: 45%;
+  margin: 0 auto 0 150px;
+  box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, .3);
+}
+
+#contents .mountains .mountain .swiper-button-next {
+  color: #fff;
+  --swiper-navigation-size: 50px;
+}
+
+#contents .mountains .mountain .swiper-button-prev {
+  color: #fff;
+  --swiper-navigation-size: 50px;
+}
+
+
+
+
+#contents .forests {
+  background: url(../images/sub3/sub3_12.svg) no-repeat;
+  background-position: 0% 80%;
+}
+
+#contents .forests .forest {
+  width: 65%;
+  margin: 0 150px 0 auto;
+}
+
+#contents .forests .forest li {
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+#contents .forests .forest .swiper-button-next {
+  color: #fff;
+  right: 50px;
+  --swiper-navigation-size: 50px;
+}
+
+#contents .forests .forest .swiper-button-prev {
+  color: #fff;
+  left: 50px;
+  --swiper-navigation-size: 50px;
+}
+
+
+#contents .lakes {
+  background: url(../images/sub3/sub3_18.svg) no-repeat;
+  background-position: left bottom;
+  background-size: contain;
+  padding-bottom: 50px;
+}
+
+#contents .lakes .lake {
+  width: 40%;
+  margin: 0 auto;
+}
+
+#contents .lakes .lake li {
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+
+#contents .caves {
+  position: relative;
+}
+
+#contents .caves .cave {
+  width: 40%;
+  margin: 0 auto;
+}
+
+#contents .caves .cave li {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid var(--font-color-point1);
+}
+
+#contents .caves .illust {
+  width: 40%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+
+
+#contents .caves .swiper-button-next {
+  position: absolute;
+  top: 60%;
+  right: 25%;
+  z-index: 20;
+  color: var(--font-color-point1);
+}
+
+#contents .caves .swiper-button-prev {
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  z-index: 20;
+  color: var(--font-color-point1);
+}
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+  html {
+    font-size: 18px;
+  }
+
+  .scroll_down_button {
+    font-size: 1.2rem;
+    bottom: 6%;
+    width: 40px;
+    height: 40px;
+  }
+
+  .arrow {
+    width: 25px;
+    height: 25px;
+  }
+
+  @keyframes down {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+
+    40% {
+      transform: translateY(6px);
+    }
+
+    60% {
+      transform: translateY(5px);
+    }
+  }
+
+  #contents {
+    padding: 0 0 100px;
+  }
+
+  #contents section {
+    margin: 50px 0 70px;
+  }
+
+  #contents h2 {
+    font-size: 4rem
+  }
+
+  #contents h2 span {
+    font-size: 2.5rem;
+    margin-left: 10px;
+    font-weight: 650;
+  }
+
+  #contents section h3 {
+    padding: 30px 0 30px;
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+
+  #contents section h4 {
+    font-weight: 550;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #contents .desc {
+    text-align: center;
+    margin: 0 150px 30px;
+  }
+
+  #contents .sub_title {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+  }
+
+  #contents .swiper-container .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    margin: 0 8px;
+  }
+
+  #contents .swiper-container .swiper-pagination-bullets {
+    bottom: 15px !important;
+  }
+
+  #contents .mountains {
+    background: url(../images/sub3/sub3_6_1024.svg) no-repeat;
+    background-position: 100% 30%;
+  }
+
+  #contents .mountains .mountain {
+    width: 55%;
+    margin: 0 auto 0 90px;
+  }
+
+  #contents .mountains .mountain .swiper-button-next {
+    --swiper-navigation-size: 30px;
+  }
+
+  #contents .mountains .mountain .swiper-button-prev {
+    --swiper-navigation-size: 30px;
+  }
+
+
+  #contents .forests {
+    background: url(../images/sub3/sub3_12_1024.svg) no-repeat;
+    background-position: 0% 90%;
+  }
+
+  #contents .forests .forest {
+    width: 80%;
+    margin: 0 70px 0 auto;
+    transform: translateX(30px);
+  }
+
+  #contents .forests .forest li {
+    border-radius: 20px;
+  }
+
+  #contents .forests .forest .swiper-button-next {
+    color: #fff;
+    right: 30px;
+    --swiper-navigation-size: 30px;
+  }
+
+  #contents .forests .forest .swiper-button-prev {
+    color: #fff;
+    left: 30px;
+    --swiper-navigation-size: 30px;
+  }
+
+
+  #contents .lakes .lake {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  #contents .caves .cave {
+    width: 52%;
+    margin: 0 auto;
+    transform: translateX(70px);
+  }
+
+  #contents .caves .swiper-button-next {
+    top: 65%;
+    right: 12%;
+  }
+
+  #contents .caves .swiper-button-prev {
+    top: 65%;
+    left: 26%;
+  }
+
+
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+  html {
+    font-size: 16px;
+  }
+
+  #contents {
+    padding: 0 0 90px 0
+  }
+
+  #contents section {
+    margin: 100px 0 70px;
+  }
+
+  #contents h2 {
+    font-size: 3.5rem
+  }
+
+  #contents h2 span {
+    font-size: 2.5rem;
+    margin-left: 5px;
+    font-weight: 600;
+  }
+
+  #contents section h3 {
+    padding: 20px 0 20px;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+  }
+
+  #contents h4 {
+    font-size: 2rem;
+    font-weight: 550;
+  }
+
+  #contents .desc {
+    text-align: center;
+    margin: 0 60px 10px;
+  }
+
+  #contents .sub_title {
+    font-size: 1.88rem;
+    line-height: 2.5rem;
+    font-weight: 450;
+    margin-bottom: 5px;
+  }
+
+  #contents .swiper-container .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    margin: 0 6px;
+  }
+
+  #contents .swiper-container .swiper-pagination-bullets {
+    bottom: 10px !important;
+  }
+
+
+  #contents .mountains {
+    background: url(../images/sub3/sub3_6_768.svg) no-repeat;
+    background-position: 100% 40%;
+  }
+
+  #contents .mountains .desc p:nth-of-type(2) {
+    display: none;
+  }
+
+  #contents .mountains .mountain {
+    width: 70%;
+    margin: 0 auto 0 40px;
+  }
+
+  #contents .mountains .mountain .swiper-button-next {
+    --swiper-navigation-size: 30px;
+  }
+
+  #contents .mountains .mountain .swiper-button-prev {
+    --swiper-navigation-size: 30px;
+  }
+
+  #contents .forests {
+    background: url(../images/sub3/sub3_12_768.svg) no-repeat;
+    background-position: 0% 90%;
+  }
+
+  #contents .forests .forest {
+    width: 80%;
+    margin: 0 20px 0 auto;
+    transform: translateX(0);
+  }
+
+  #contents .forests .forest .swiper-button-next {
+    color: #fff;
+    right: 10px;
+    --swiper-navigation-size: 30px;
+  }
+
+  #contents .forests .forest .swiper-button-prev {
+    color: #fff;
+    left: 10px;
+    --swiper-navigation-size: 30px;
+  }
+
+  #contents .lakes .lake {
+    width: 55%;
+    margin: 0 auto;
+  }
+
+
+  #contents .caves .desc p:nth-of-type(2) {
+    display: none;
+  }
+
+  #contents .caves .swiper-button-next {
+    top: 65%;
+    right: 9%;
+  }
+
+  #contents .caves .swiper-button-prev {
+    top: 65%;
+    left: 27%;
+  }
+
+}
+
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+  #contents {
+    padding: 70px 0;
+  }
+
+  #contents section {
+    margin: 60px 0 30px;
+    padding: 0 20px;
+  }
+
+  #contents section h3 {
+    padding: 20px 0 0;
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+  #contents section h4 {
+    font-size: 2rem;
+    font-weight: 550;
+    margin-bottom: 5px;
+    line-height: 2.7rem;
+  }
+
+  #contents .desc {
+    text-align: center;
+    margin: 0 0 10px;
+  }
+
+  #contents .sub_title {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    margin-bottom: 10px;
+    font-weight: 450;
+  }
+
+  #contents .swiper-container .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+  }
+
+  #contents .swiper-container .swiper-pagination-bullets {
+    bottom: 10px !important;
+  }
+
+  #contents .mountains {
+    background: url(../images/sub3/sub3_6_640.svg) no-repeat;
+    background-position: 100% 20%;
+  }
+
+  #contents .mountains .mountain {
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 3px 3px 10px;
+  }
+
+  #contents .mountains .mountain .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+  }
+
+  #contents .forests {
+    background: url(../images/sub3/sub3_12_768.svg) no-repeat;
+    background-position: 0% 20%;
+  }
+
+  #contents .forests .forest {
+    width: 100%;
+    margin: 0 auto;
+    transform: translateX(0);
+  }
+
+
+
+  #contents .lakes .lake {
+    width: 75%;
+  }
+
+  #contents .lakes .lake .swiper-pagination-bullets {
+    bottom: 15px !important;
+  }
+
+
+  #contents .caves .cave {
+    width: 80%;
+    margin: 0 auto;
+    transform: translateX(40px);
+  }
+
+  #contents .caves .swiper-button-next {
+    top: 67%;
+    right: 9%;
+    --swiper-navigation-size: 30px;
+  }
+
+  #contents .caves .swiper-button-prev {
+    top: 67%;
+    left: 27%;
+    --swiper-navigation-size: 30px;
+  }
+
+
+
+
+}
