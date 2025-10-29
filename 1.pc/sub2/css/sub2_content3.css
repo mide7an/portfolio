@@ -1,0 +1,23 @@
+#contentArea .content_area {
+    width: 2000px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 180px;
+}
+
+#contentArea .content_area .organization {
+    background: url(../images/content3/sub2_content3_1.png) center no-repeat;
+    background-size: contain;
+    width: 1192px;
+    height: 1006px;
+
+
+}
+
+#contentArea .content_area .organization ul {
+    text-indent: -999px;
+    overflow: hidden
+}

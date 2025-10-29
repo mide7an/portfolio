@@ -1,0 +1,158 @@
+/* 이용안내 시설안내 콘텐츠 */
+#contentArea .content_area {
+    width: 1400px;
+    margin: 0 auto;
+    padding-bottom: 150px;
+}
+
+#contentArea .facility_officer {
+    padding: 50px 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+#contentArea h3 {
+    font-size: 2.25rem;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+#contentArea .facility_officer .facility_content {
+    font-size: 1.56rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 0 70px;
+}
+
+#contentArea .process_renting .process_title {
+    font-size: 1.5rem;
+}
+
+#contentArea .process_renting ol {
+    width: 1400px;
+    display: flex;
+    padding: 80px;
+}
+
+#contentArea .process_renting ol li {
+    position: relative;
+    width: 25%;
+    height: 344px;
+    background: url(../images/content2/sub1_content2_1.png) center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+#contentArea .process_renting ol li p {
+    text-align: center;
+}
+
+#contentArea .process_renting ol li .list_num {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    color: #fff;
+    background: -webkit-linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    background: -moz-linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    background: -o-linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    background: linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    border-radius: 50%;
+}
+
+#contentArea .amenities {
+    padding: 100px 0 100px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#contentArea .facility_officer .material-symbols-outlined,
+#contentArea .amenities .material-symbols-outlined {
+    font-size: 80px;
+    background: -webkit-linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    background: -moz-linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    background: -o-linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    background: linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    font-variation-settings:
+        'FILL' 1
+}
+
+
+
+
+
+#contentArea .amenities ul {
+    width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+#contentArea .amenities ul li {
+    position: relative;
+    width: 680px;
+    overflow: hidden;
+    border: 1.5px dashed #666;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+
+
+}
+
+#contentArea .amenities ul li img {
+    transition: all .3s;
+    filter: brightness(.7);
+}
+
+#contentArea .amenities ul li:hover img {
+    filter: brightness(1);
+}
+
+#contentArea .amenities ul li p {
+    text-align: justify;
+    padding: 20px 30px 50px;
+    border-radius: 10px;
+    line-height: 1.5rem;
+}
+
+#contentArea .amenities ul li .amenities_list {
+    position: absolute;
+    width: 180px;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.25rem;
+    padding: 10px 30px;
+    background: var(--font-color-main);
+    color: #fff;
+    font-weight: 500;
+    transition: all .3s ease-out;
+    border-radius: 50px;
+    text-align: center;
+}
+
+#contentArea .amenities ul li:hover .amenities_list {
+    color: var(--font-color-point2);
+}

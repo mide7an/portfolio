@@ -1,0 +1,105 @@
+#contentArea .content_area {
+    position: relative;
+    width: 1400px;
+    left: 50%;
+    margin-left: -700px;
+    margin-bottom: 50px;
+}
+
+
+#contentArea .content_area .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#contentArea .content_area .search input {
+    width: 400px;
+    font-size: 1.1rem;
+    padding: 0 0 0 15px;
+    height: 45px;
+    margin-right: 5px;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+}
+
+#contentArea .content_area .search button {
+    font-size: 1rem;
+    padding: 11px 10px;
+    border: 0;
+    width: 100px;
+    background: #333;
+    cursor: pointer;
+    color: #fff;
+    transition: all .3s;
+    margin-right: 5px;
+    border-radius: 7px;
+}
+
+#contentArea .content_area .search button:hover {
+    background: #bbb;
+    color: #333
+}
+
+#contentArea .content_area .poster_list {
+    margin-bottom: 170px;
+}
+
+#contentArea .content_area ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+#contentArea .content_area ul li {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#contentArea .content_area ul li .imgs {
+    border: 1px solid #333;
+}
+
+#contentArea .content_area ul li .on {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width: 80px;
+    padding: 15px 20px 15px 30px;
+    background: linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    ;
+    text-align: center;
+    font-weight: 450;
+    font-size: 1.25rem;
+    color: #fff;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+
+#contentArea .content_area ul li .infor {}
+
+#contentArea .content_area ul li .infor dl {
+    padding-bottom: 30px;
+}
+
+#contentArea .content_area ul li .infor dl dt {
+    padding: 15px 0 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: var(--font-color-main);
+}
+
+#contentArea .content_area ul li .infor dl dd {
+    font-weight: 400;
+    line-height: 1.88rem;
+}
+
+#contentArea .content_area ul li .infor dl dd span {
+    width: 90px;
+    display: inline-block;
+    font-weight: 600;
+}

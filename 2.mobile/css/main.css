@@ -1,0 +1,514 @@
+/* 비주얼영역 */
+.visual {}
+
+.visual .swiper1 {
+  width: 100%;
+  height: auto;
+  /* 스와이퍼의 높이값이 유동이면 auto 값을 고정이면 px값을 주어야한다 */
+}
+
+.visual .swiper1 .swiper-slide {
+  text-align: center;
+}
+
+.visual .swiper1 .swiper-slide img {
+  width: 100%;
+}
+
+.visual .swiper1 .swiper-slide p {
+  position: absolute;
+  font-size: 3rem;
+  color: #fff;
+  left: 0;
+  width: 100%;
+  font-weight: 600;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-55%);
+  line-height: 4.5rem;
+  text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
+}
+
+
+.swiper-container-horizontal>.swiper-pagination-bullets {
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+
+.visual .swiper1 .swiper-pagination {
+  display: flex;
+  justify-content: space-between;
+  max-width: 120px;
+  margin-bottom: 20PX;
+}
+
+
+
+.visual .swiper1 .swiper-pagination-bullet {
+  background: #fff;
+  opacity: .8;
+  margin-left: 5px;
+  width: 15px;
+  height: 15px;
+}
+
+.visual .swiper1 .swiper-pagination-bullet-active {
+  background: var(--font-color-point2);
+  opacity: .7;
+  width: 50px;
+  height: 15px;
+  border-radius: 15px;
+  transition: all .3s;
+}
+
+
+
+/* 스와이퍼 기본 내비게이션 화살표 숨기기 */
+.visual .swiper1 .swiper-button-prev:after,
+.visual .swiper1 .swiper-button-next:after {
+  display: none;
+}
+
+.visual .swiper1 .swiper-button-prev,
+.visual .swiper1 .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 3rem;
+  cursor: pointer;
+  z-index: 10;
+  opacity: .8;
+}
+
+.visual .swiper1 .swiper-button-prev {
+  left: 10px;
+}
+
+.visual .swiper1 .swiper-button-next {
+  right: 10px;
+}
+
+
+/* 이용안내 */
+#wrap {
+  width: 100%;
+}
+
+#wrap #content {}
+
+#wrap #content .watch {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.watch .y_back {
+  position: relative;
+  display: block;
+  width: 93%;
+  height: auto;
+  border-radius: 0 5% 5% 0;
+  padding-bottom: 5%;
+  overflow: hidden;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, .1)
+}
+
+
+.gallery-top {
+  width: 65%;
+  height: 90%;
+  margin-left: 5%;
+  margin-right: 30%;
+  padding: 5% 0 5%;
+}
+
+.gallery-top .swiper-wrapper {}
+
+.gallery-top .swiper-slide {
+  border-radius: 15px;
+}
+
+.gallery-top .swiper-slide-active {
+  border-radius: 15px;
+  filter: brightness(1);
+}
+
+.gallery-top .swiper-slide img {
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.gallery-top .swiper-slide span {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 5px 12px 6px;
+  background: rgba(255, 255, 255, .6);
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+
+/* 스와이퍼 기본 내비게이션 화살표 숨기기 */
+.gallery-top .swiper-button-prev:after,
+.gallery-top .swiper-button-next:after {
+  display: none;
+}
+
+/* 구글 머티리얼 아이콘 스타일링 */
+.gallery-top .swiper-button-prev,
+.gallery-top .swiper-button-next {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  color: var(--font-color-point2);
+  font-size: 4rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.gallery-top .swiper-button-prev {
+  left: 7px;
+}
+
+.gallery-top .swiper-button-next {
+  right: 7px;
+}
+
+
+
+.gallery-thumbs {
+  z-index: 5;
+  margin-left: 5%;
+  width: 100%;
+  height: 25%;
+
+
+
+}
+
+.gallery-thumbs .swiper-wrapper {
+  width: 100%;
+}
+
+.gallery-thumbs .swiper-slide {
+  height: auto;
+  filter: brightness(.8);
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px dashed #333;
+  box-sizing: border-box;
+}
+
+
+.gallery-thumbs .swiper-slide-thumb-active {
+  filter: brightness(1.1);
+}
+
+.gallery-thumbs .swiper-slide img {
+  width: 100%;
+}
+
+.watch .title_box {
+  position: absolute;
+  right: 12%;
+  top: 5%;
+  font-weight: 700;
+  color: var(--font-color-point1);
+
+}
+
+.watch .title {
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+
+/* 관람 자세히보기 버튼 */
+#content .watch a {
+  width: 45px;
+  height: 45px;
+  background: var(--font-color-main);
+  color: #fff;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+
+}
+
+#content .watch .title_box span {
+  display: inline-block;
+  font-size: 2.5rem;
+  border-radius: 50%;
+}
+
+
+
+
+#content .watch .watch_box2 {
+  padding: 5% 5%;
+
+
+}
+
+
+#content .watch .watch_box2 dt {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--font-color-main);
+  font-weight: 700;
+}
+
+#content .watch .watch_box2 dd {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 2%;
+  line-height: 1.5rem;
+}
+
+#content .watch .watch_box2 strong {
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+
+.exhibit {
+  background: var(--font-color-point2) no-repeat;
+  background-size: cover;
+  padding: 10% 0;
+}
+
+.exhibit h3 {
+  font-size: 2.2rem;
+  text-align: center;
+  font-weight: 550;
+  margin-bottom: 5%;
+}
+
+.exhibit h3 strong {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--font-color-point1);
+  padding: 4px 10px 6px;
+  margin-left: 5px;
+  background: #fff;
+  border: 1px dashed var(--font-color-point1);
+}
+
+
+
+.exhibit .cubeswiper {
+  width: 70%;
+  height: auto;
+  margin-bottom: 5%;
+  position: relative;
+}
+
+.exhibit .cube .swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.exhibit .cubeswiper img {
+  width: 100%;
+}
+
+.exhibit .cubeswiper .swiper-pagination {
+  display: flex;
+  justify-content: space-between;
+  max-width: 80px;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+.exhibit .cubeswiper .swiper-pagination-bullet {
+  background: #fff;
+  opacity: .8;
+  margin-left: 5px;
+  width: 15px;
+  height: 15px;
+}
+
+.exhibit .cubeswiper .swiper-pagination-bullet-active {
+  background: var(--font-color-point2);
+  opacity: 1
+}
+
+.exhibit .disc {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  display: flex;
+
+}
+
+.exhibit .cubeswiper .title {
+  height: auto;
+  color: #fff;
+  border-radius: 40px;
+  margin-top: 5px;
+  text-wrap: nowrap;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  text-shadow: 0 0 10px rgba(0, 0, 0, .7);
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.exhibit p {
+  text-align: justify;
+  font-size: 1.1rem;
+  padding: 2% 5%;
+  font-weight: 700;
+}
+
+/* 전시 자세히보기 버튼 */
+#content .exhibit .btn {
+  width: 40px;
+  height: 40px;
+  background: var(--font-color-point2);
+  color: #fff;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+
+}
+
+
+#content .exhibit a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#content .exhibit a span {
+  display: inline-block;
+  font-size: 2.5rem;
+  border-radius: 50%;
+}
+
+
+#content .exhibit p {}
+
+
+
+#content .perform h3 {
+  font-size: 2.2rem;
+  text-align: center;
+  font-weight: 550;
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+
+#content .perform h3 strong {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--font-color-point1);
+
+}
+
+/* 공연 자세히보기 */
+#content .perform a {
+  width: 40px;
+  height: 40px;
+  background: var(--font-color-point2);
+  color: #fff;
+  border-radius: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  transform: translateY(6px);
+
+}
+
+#content .perform a span {
+  font-size: 2.5rem;
+}
+
+
+#content .perform #text {
+  text-align: center;
+  text-align: center;
+  font-size: 20px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+
+
+
+#content .perform .swiper-container {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+#content .perform .swiper-slide {
+  width: 250px;
+  height: auto;
+  border: 1px solid #333;
+  box-sizing: border-box;
+
+}
+
+#content .perform img {
+  width: 100%;
+}
+
+#content .perform .swiper-slide {
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+
+#content .perform .swiper-slide {
+  opacity: 0.7;
+  transform: scale(0.95);
+}
+
+#content .perform .swiper-slide.swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#content .perform .swiper-pagination-bullet {
+  background: #333;
+  opacity: .1;
+  margin-left: 5px;
+  width: 15px;
+  height: 15px;
+}
+
+#content .perform .swiper-pagination-bullet-active {
+  background: var(--font-color-point2);
+  opacity: 1
+}
+
+#content .perform #text dt {
+  color: var(--font-color-main);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#content .perform #text dd {
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 400;
+}

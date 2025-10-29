@@ -1,0 +1,194 @@
+
+#contentArea .content_area {
+
+    width: 1400px;
+    padding-bottom: 150px;
+    margin: 0 auto;
+}
+
+#contentArea .content_area .email_visual {
+    border-radius: 70px 70px 0 0;
+    overflow: hidden;
+
+}
+
+#contentArea .content_area .email_visual {
+    position: relative;
+
+
+}
+
+#contentArea .content_area .email_visual img {}
+
+#contentArea .content_area .email_visual p {
+    position: absolute;
+    top: 300px;
+    right: 350px;
+    font-size: 2.25rem;
+
+
+
+}
+
+#contentArea .email_box {
+    width: 1400px;
+    margin: 30px 0;
+    padding: 30px 0;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 30px;
+
+}
+
+#contentArea .email_box #contact-form {
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+#contentArea .email_box div {
+    padding: 20px;
+}
+
+#contentArea .email_box label {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: block;
+}
+
+#contentArea .email_box input,
+#contentArea .email_box textarea {
+    padding: 15px 20px;
+    width: 900px;
+    font-size: 1.1rem;
+    border: 0;
+    outline: none;
+    background: #f7f7f7;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .2);
+    transition: all .5s ease-out;
+}
+
+#contentArea .email_box input:focus,
+#contentArea .email_box input:hover,
+#contentArea .email_box textarea:focus,
+#contentArea .email_box textarea:hover {
+    background: #ddd;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .4);
+}
+
+#contentArea .email_box textarea {
+    height: 270px;
+}
+
+#contentArea .email_box button {
+    padding: 15px 40px 13px;
+    background: var(--font-color-point1);
+    font-size: 1.2rem;
+    border-radius: 30px;
+    margin: 5px auto 30px;
+    display: block;
+    cursor: pointer;
+    color: #f0f0f0;
+    border: 0;
+    font-weight: 500;
+    transition: all .5s;
+}
+
+#contentArea .email_box button:hover {
+    background: var(--font-color-main);
+    color: var(--font-color-point2);
+}
+
+
+#contentArea .email_info {
+    margin: 30px 0;
+}
+
+#contentArea .email_info .agree {
+    display: flex;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+/* 기본 체크박스 숨기기 */
+input[type="checkbox"] {
+    appearance: none;
+    /* 기본 스타일 제거 */
+    -webkit-appearance: none;
+    /* 사파리/크롬 브라우저 기본 스타일 제거 */
+    -moz-appearance: none;
+    /* 파이어폭스 기본 스타일 제거 */
+    display: inline-block;
+    /* 가상 요소를 위해 인라인 블록으로 만듦 */
+    position: relative;
+    /* 가상 요소의 기준점 설정 */
+    width: 22px;
+    /* 원하는 크기로 너비 설정 */
+    height: 22px;
+    /* 원하는 크기로 높이 설정 */
+    border: 2px solid #ccc;
+    /* 테두리 스타일 */
+    border-radius: 4px;
+    /* 모서리 둥글게 */
+    cursor: pointer;
+    margin-right: 10px;
+    transform: translateY(2px);
+
+}
+
+/* 체크박스에 체크됐을 때 배경색 변경 */
+input[type="checkbox"]:checked {
+    background-color: var(--font-color-main);
+    /* 파란색 배경 */
+    border-color: var(--font-color-main);
+    /* 파란색 테두리 */
+
+}
+
+/* 체크됐을 때 '✓' 모양 추가 */
+input[type="checkbox"]:checked::before {
+    content: '\2713';
+    /* 유니코드 체크 마크 */
+    font-size: 20px;
+    /* 체크 마크 크기 */
+    color: #fff;
+    /* 체크 마크 색상 */
+    position: absolute;
+    /* 절대 위치 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* 정확히 중앙에 배치 */
+}
+
+#contentArea .email_info p {
+    font-size: 1.25rem;
+    margin: 50px 0
+}
+
+
+#contentArea .email_info dl {
+    margin: 0 0 30px;
+}
+
+#contentArea .email_info dt {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--font-color-main);
+}
+
+#contentArea .email_info dd {
+    line-height: 1.8rem;
+    font-size: 1.25rem;
+}
+
+#contentArea .email_info span {
+    font-weight: 550;
+    font-size: 1.25rem;
+}
+
+#contentArea .email_info p:nth-of-type(2) {
+    font-weight: 550;
+}

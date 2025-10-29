@@ -1,0 +1,55 @@
+#contentArea .content_area {
+    position: relative;
+    margin-top: 20px;
+    width: 2000px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: url(../images/content1/sub2_content1_2.jpg) no-repeat;
+}
+
+#contentArea .content_area .greeting_box {
+    width: 1400px;
+    height: 1000px;
+    margin: 100px auto 0;
+    display: flex;
+
+
+}
+
+#contentArea .content_area .photo {
+    width: 457px;
+    height: 488px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#contentArea .content_area .greeting {
+    margin-left: 80px;
+}
+
+#contentArea .content_area .greeting p:nth-of-type(1) {
+    font-size: 2.81rem;
+    margin-bottom: 50px;
+    background: -webkit-linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    background: -moz-linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    background: -o-linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    background: linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+#contentArea .content_area .greeting p:nth-of-type(2) {
+    font-size: 1.56rem;
+    line-height: 3.13rem;
+    margin-bottom: 100px;
+}
+
+#contentArea .content_area .greeting p:nth-of-type(3) {
+    font-size: 1.88rem;
+    text-align: left;
+    font-weight: 500;
+
+}

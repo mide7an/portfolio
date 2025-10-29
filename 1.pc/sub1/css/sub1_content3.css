@@ -1,0 +1,80 @@
+/* 이용안내 오시는 길 콘텐츠 */
+* {
+    margin: 0;
+    padding: 0
+}
+
+.content_area {
+    padding-bottom: 150px;
+}
+
+.map_area {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+#map {
+    width: 1200px;
+    height: 600px;
+    border: 5px solid #ddd;
+}
+
+.map_area p {
+    padding: 30px 10px 50px;
+    line-height: 2.2rem;
+    font-size: 1.2rem;
+}
+
+.map_area p>strong {
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.map_area dl {
+    padding-left: 20px;
+}
+
+.map_area dl dt {
+    margin: 20px 0 15px;
+    font-size: 1.56rem;
+    font-weight: 600;
+    color: var(--font-color-main);
+
+
+}
+
+.map_area dl dt {
+    margin-right: 30px;
+    font-size: 1.56rem;
+    font-weight: 600;
+}
+
+.map_area dl dt span {
+    font-size: 2.5rem;
+    transform: translateY(9px);
+}
+
+.map_area dl dd {
+    margin-bottom: 30px;
+
+}
+
+.map_area dl dd .subway {
+    font-weight: 600;
+}
+
+.map_area dl dd .postscript {
+    /* color:red; */
+    font-weight: 600;
+    font-size: 1.25rem
+}
+
+.map_area dl dd .car {
+    display: block;
+    margin: 20px 0 0px;
+    font-weight: 600;
+}
+
+.content_area {
+    padding-bottom: 150px;
+}

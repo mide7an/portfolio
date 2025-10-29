@@ -1,0 +1,253 @@
+/* 이용안내 관람안내 콘텐츠 */
+#contentArea .content_area {
+    margin-top: 20px;
+    width: 2000px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 220px;
+    position: relative;
+}
+
+#contentArea .content_area .img_back {
+    border-radius: 0 30px 30px 0;
+    width: 450px;
+    height: 1040px;
+    overflow: hidden;
+    margin-top: -20px;
+
+}
+
+#contentArea .content_area .content1 {
+    position: absolute;
+    top: 60px;
+    left: 300px;
+    width: 1320px;
+    padding: 70px 0;
+    background: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, .1)
+}
+
+#contentArea .content_area .content1 strong:nth-of-type(1) {
+    color: var(--font-color-point1);
+}
+
+#contentArea .content_area .content2 {
+    position: absolute;
+    top: 430px;
+    right: 300px;
+    width: 1100px;
+    padding: 70px 0;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, .1);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background: #fff;
+
+
+}
+
+#contentArea .content_area .content2 .time {
+
+    display: flex;
+    margin-left: -750px;
+    justify-content: center;
+}
+
+#contentArea .content_area .content2 .time span {
+    font-size: 4rem;
+    background: -webkit-linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    background: -moz-linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    background: -o-linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    background: linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-variation-settings:
+        'FILL' 1
+}
+
+#contentArea .content_area .content2 .time p {
+    font-size: 2.25rem;
+    background: -webkit-linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    background: -moz-linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    background: -o-linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    background: linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+#contentArea .content_area .content2 table {
+    width: 1000px;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    margin-top: 20px;
+}
+
+#contentArea .content_area .content2 table th,
+td {
+    padding: 10px 10px;
+    text-align: left;
+}
+
+#contentArea .content_area .content2 table th {
+    font-size: 1.5rem;
+    padding: 40px;
+}
+
+#contentArea .content_area .content2 table td span {
+    font-size: 1.25rem;
+}
+
+#contentArea .content_area .content2 table tr {
+    border-bottom: 2px dotted #999;
+}
+
+
+
+/* 관람료 */
+.content_area .content3 {
+    width: 1400px;
+    margin: 0 auto;
+    padding: 150px 0 0;
+}
+
+#contentArea .content_area .content3 .price {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+
+#contentArea .content_area .content3 .price span {
+    font-size: 4rem;
+    background: -webkit-linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    background: -moz-linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    background: -o-linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    background: linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-variation-settings:
+        'FILL' 1
+}
+
+#contentArea .content_area .content3 .price p {
+    font-size: 2.25rem;
+    background: -webkit-linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    background: -moz-linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    background: -o-linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    background: linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.content_area .content3 #content_nav {
+    width: 100%;
+    height: 100px;
+}
+
+.content_area .content3 .tab_menu {
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+    margin-bottom: 30px;
+}
+
+.content_area .content3 .tab_menu li a {
+    background: #333;
+    width: 200px;
+    padding: 12px 0 14px 0;
+    color: #fff;
+    transition: all .3s;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_area .content3 .tab_menu li a:hover,
+.content_area .content3 .tab_menu li a.current {
+    background: var(--font-color-point2);
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.content_area .content3 .contlist {
+    width: 1400px;
+    margin: 0 auto;
+    display: none;
+}
+
+.content_area .content3 .contlist .description {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.content_area .content3 .contlist h4 {
+    font-size: 1.88rem;
+    color: var(--font-color-main);
+}
+
+.content_area .content3 .contlist table {
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.content_area .content3 .contlist table th,
+.content_area .content3 .contlist table td {
+    padding: 20px 18px 20px 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.content_area .content3 .contlist table th {
+    border-top: 2px solid #333;
+    border-bottom: 1.5px solid #333;
+    padding: 30px 10px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.content_area .content3 .contlist table .no_border_left {
+    border-left: 0;
+    background: #fff7e1;
+    ;
+    font-weight: 500;
+}
+
+.content_area .content3 .contlist table .no_border_right {
+    border-right: 0;
+}
+
+.content_area .content3 .contlist table .align_left {
+    text-align: left;
+    padding-left: 30px;
+    line-height: 2rem;
+}
+
+.content_area .content3 .contlist table .no_back {
+    background: none;
+}
+
+.content_area .content3 .contlist table .border_bottom {
+    border-bottom: 1.5px solid #333
+}

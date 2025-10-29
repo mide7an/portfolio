@@ -1,0 +1,91 @@
+
+#contentArea .content_area {
+    margin-top: 20px;
+    width: 1400px;
+    margin: 0 auto 150px;
+    background: #fff;
+    box-shadow: 5 5 15 10 rgba(0, 0, 0, .15);
+    border-radius: 50px;
+    display: flex;
+    gap: 100px;
+    padding: 70px 0;
+}
+
+
+#contentArea .content_area .year_big ul {
+    height: 1700px;
+    margin: 0 100px;
+    font-size: 5rem;
+    font-weight: 800;
+    font-family: Roboto;
+    background: -webkit-linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    background: -moz-linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    background: -o-linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    background: linear-gradient(to bottom, var(--font-color-main) 0%, var(--font-color-point1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    display: flex;
+    flex-flow: column;
+
+}
+
+#contentArea .content_area .year_big ul li:nth-of-type(1) {
+    margin-top: 90px;
+}
+
+#contentArea .content_area .year_big ul li:nth-of-type(2) {
+    margin-top: 400px;
+}
+
+#contentArea .content_area .year_big ul li:nth-of-type(3) {
+    margin-top: 800px;
+}
+
+#contentArea .content_area .year_small {
+    position: relative;
+}
+
+#contentArea .content_area .year_small ul {}
+
+#contentArea .content_area .year_small .year_line1 {
+    width: 2px;
+    background: var(--font-color-point2);
+    height: 1500px;
+    position: absolute;
+    top: 50px;
+    left: 163px;
+}
+
+#contentArea .content_area .year_small ul {}
+
+#contentArea .content_area .year_small ul li {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 30px;
+    height: 100px;
+    width: 800px;
+}
+
+#contentArea .content_area .year_small ul li span {
+    font-family: Roboto;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+#contentArea .content_area .year_small ul li p {
+    font-size: 1.25rem;
+    line-height: 1.88rem;
+}
+
+#contentArea .content_area .year_small ul li .img_small {
+    height: 20px;
+    padding-left: 33px;
+}
+
+#contentArea .content_area .year_small ul li .img_small strong {
+    font-family: Roboto;
+
+}

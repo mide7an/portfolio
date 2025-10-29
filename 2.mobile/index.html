@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>국립과천과학관</title>
+    <link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+    <link rel="apple-touch-startup-image" href="./startup.png">
+
+    <!-- 구글폰트 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon">
+
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/1ed2900a20.js" crossorigin="anonymous"></script>
+
+    <!-- 사파리 주소창 버그? -->
+    <script>
+        // <![CDATA[
+        try {
+            window.addEventListener('load', function () {
+                setTimeout(scrollTo, 0, 0, 1);
+            }, false);
+        }
+        catch (e) { }
+        // ]]>
+    </script>
+</head>
+
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">네비게이션바로가기</a>
+    </div>
+
+
+    <div id="wrap">
+        <header id="headerArea">
+            <div class="header_top">
+                <a href="#"><span class="material-symbols-outlined menu_ham">menu_open</span></a>
+                <h1><a href="./index.html" class="logo">국립과천과학관 로고</a></h1>
+            </div>
+
+            <nav id="gnb">
+                <h2 class="hidden">글로벌네비게이션영역</h2>
+                <div class="gnb_top">
+                    <a href="#" class="member">로그인</a><a href="#" class="member">회원가입</a>
+                    <div class="close_gnb">
+                        <a href="#"><span class="material-symbols-outlined ">close</span></a>
+                    </div>
+                </div>
+                <ul class="mainMenu">
+                    <li class="depth1">
+                        <h3>
+                            <a href="#" class="depth">과학관소개
+                                <span class="material-symbols-outlined">
+                                    expand_more
+                                </span>
+                            </a>
+                        </h3>
+                        <ul>
+                            <li><a href="./sub1_1.html">인사말</a></li>
+                            <li><a href="./sub1_2.html">관람안내</a></li>
+                            <li><a href="./sub1_3.html">오시는 길</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="depth1">
+                        <h3>
+                            <a href="#" class="depth">전시관안내
+                                <span class="material-symbols-outlined">
+                                    expand_more
+                                </span>
+                            </a>
+                        </h3>
+                        <ul>
+                            <li><a href="./sub2_1.html">상설전시관</a></li>
+                            <li><a href="./sub2_2.html">야외전시관</a></li>
+                            <li><a href="./sub2_3.html">천문우주관</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <h3>
+                            <a href="#" class="depth">공연/행사
+                                <span class="material-symbols-outlined">
+                                    expand_more
+                                </span>
+                            </a>
+                        </h3>
+                        <ul>
+                            <li><a href="./sub3_1.html">공연안내</a></li>
+                            <li><a href="./sub3_2.html">행사안내</a></li>
+                        </ul>
+                    <li class="depth1">
+                        <h3>
+                            <a href="#" class="depth">교육안내
+                                <span class="material-symbols-outlined">
+                                    expand_more
+                                </span>
+                            </a>
+                        </h3>
+                        <ul>
+                            <li><a href="./sub4_1.html">교육과정</a></li>
+                            <li><a href="./sub4_2.html">문의하기</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <div class="gnb_logo">국립과천과학관 로고</div>
+            </nav>
+        </header>
+
+        <div class="visual">
+            <div class="swiper-container swiper1">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <img src="./images/main/visual01x2.jpg" alt="">
+                        <p>과학이 문화가 <br> 되는 곳</p>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="./images/main/visual02x2.jpg" alt="">
+                        <p>책임감 있는 <br>미래 시민 양성</p>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="./images/main/visual03x2.jpg" alt="">
+                        <p>호기심을 <br> 얻어가는 곳</p>
+                    </li>
+                </ul>
+                <!-- Add Arrows -->
+                <span class="swiper-button-prev material-icons">arrow_back</span>
+                <span class="swiper-button-next material-icons">arrow_forward</span>
+                <!-- Add Pagination -->
+
+
+                <div class="swiper-pagination"></div>
+
+              
+            </div>
+
+        </div>
+        <article id="content">
+            <h2 class="hidden">본문콘텐츠영역</h2>
+
+            <section class="watch">
+                <h3 class="hidden">이용안내</h3>
+                <div class="y_back">
+                    <div class="swiper-container gallery-top">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide"><img src="./images/main/watch01x2.jpg" alt=""><span>자연사관</span>
+                            </li>
+                            <li class="swiper-slide"><img src="./images/main/watch02x2.jpg" alt=""><span>한국과학문명관</span>
+                            </li>
+                            <li class="swiper-slide"><img src="./images/main/watch03x2.jpg" alt=""><span>미래상상SF관</span>
+                            </li>
+                            <li class="swiper-slide"><img src="./images/main/watch04x2.jpg" alt=""><span>유아체험관</span>
+                            </li>
+                            <li class="swiper-slide"><img src="./images/main/watch05x2.jpg" alt=""><span>첨단기술관</span>
+                            </li>
+                            <li class="swiper-slide"><img src="./images/main/watch06x2.jpg" alt=""><span>명예의전당</span>
+                            </li>
+                            <li class="swiper-slide"><img src="./images/main/watch07x2.jpg" alt=""><span>과학탐구관</span>
+                            </li>
+
+
+                        </ul>
+                        <!-- Add Arrows -->
+                        <span class="swiper-button-prev material-icons">chevron_left</span>
+                        <span class="swiper-button-next material-icons">chevron_right</span>
+                    </div>
+                    <div class="swiper-container gallery-thumbs">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide"><img src="./images/main/watch01sx2.jpg" alt=""></li>
+                            <li class="swiper-slide"><img src="./images/main/watch02sx2.jpg" alt=""></li>
+                            <li class="swiper-slide"><img src="./images/main/watch03sx2.jpg" alt=""></li>
+                            <li class="swiper-slide"><img src="./images/main/watch04sx2.jpg" alt=""></li>
+                            <li class="swiper-slide"><img src="./images/main/watch05sx2.jpg" alt=""></li>
+                            <li class="swiper-slide"><img src="./images/main/watch06sx2.jpg" alt=""></li>
+                            <li class="swiper-slide"><img src="./images/main/watch07sx2.jpg" alt=""></li>
+
+
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="title_box">
+                    <div class="title">관람 <br>안내</div>
+                    <a href="./sub1_2.html">
+                        <span class="material-symbols-outlined"> add</span>
+                    </a>
+
+                </div>
+                <div class="watch_box2">
+                    <dl>
+                        <dt>관람시간</dt>
+                        <dd>오전 9:30 ~ 오후 5:30</dd>
+                        <dt>관람료</dt>
+                        <dd><strong>4,000원(단체 3,000원)</strong> 어른 20 ~ 64 세 <br>
+                            <strong>2,000원(단체 1,480원)</strong> 초·중·고 및 동일연령 청소년 7 ~ 19 세 <br>
+                            <strong> 무료</strong> 유아 7세 미만, 경로우대자 65세 이상, 장애인, <br>
+                            국가유공자 및 기초생활수급자/ICOM 회원 카드 소지자(연령 구분 없음) <br>
+                        </dd>
+                    </dl>
+                </div>
+
+
+            </section>
+            <section class="exhibit">
+                <h3>과천과학관의 <strong>다양한 전시관</strong></h3>
+                <!-- Swiper -->
+                <div class="swiper-container cubeswiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./images/main/exhibit01x2.jpg" alt="">
+                            <div class="disc">
+                                <span class="title">상설전시관</span>
+                                <div class="btn">
+                                    <a href="./sub2_1.html">
+                                        <span class="material-symbols-outlined"> add</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"><img src="./images/main/exhibit02x2.jpg" alt="">
+                            <div class="disc">
+                                <span class="title">야외전시관</span>
+                                <div class="btn">
+                                    <a href="./sub2_2.html">
+                                        <span class="material-symbols-outlined"> add</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"><img src="./images/main/exhibit03x2.jpg" alt="">
+                            <div class="disc">
+                                <span class="title">천문우주관</span>
+                                <div class="btn">
+                                    <a href="./sub2_3.html">
+                                        <span class="material-symbols-outlined"> add</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <p>과학탐구관, 자연사관, 한국과학문명관,명예의전당,
+                    미래상상SF관, 첨단기술관, 유아체험관, 특별기획전,
+                    곤충생태관,자연생태공원,공룡공원, 옥외전시장,
+                    천체투영관, 천문대, 스페이스 아날로그
+                    전시관이 있습니다.</p>
+
+            </section>
+            <section class="perform">
+
+                <h3><strong>생생한 공연</strong>을 즐겨보세요! <a href="./sub3_1.html">
+                        <span class="material-symbols-outlined"> add</span>
+                    </a>
+                </h3>
+
+                <div class="swiper-container poster">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><img src="./images/main/perform01x2.jpg" alt="공연포스터"></li>
+                        <li class="swiper-slide"><img src="./images/main/perform02x2.jpg" alt="공연포스터"></li>
+                        <li class="swiper-slide"><img src="./images/main/perform03x2.jpg" alt="공연포스터"></li>
+                        <li class="swiper-slide"><img src="./images/main/perform04x2.jpg" alt="공연포스터"></li>
+                        <li class="swiper-slide"><img src="./images/main/perform05x2.jpg" alt="공연포스터"></li>
+                        <li class="swiper-slide"><img src="./images/main/perform06x2.jpg" alt="공연포스터"></li>
+                        <li class="swiper-slide"><img src="./images/main/perform07x2.jpg" alt="공연포스터"></li>
+                        <li class="swiper-slide"><img src="./images/main/perform08x2.jpg" alt="공연포스터"></li>
+                        <li class="swiper-slide"><img src="./images/main/perform09x2.jpg" alt="공연포스터"></li>
+
+
+                    </ul>
+                    
+                </div>
+                <div id="text"></div>
+            </section>
+
+
+        </article>
+        <footer id="footerArea">
+            <a class="top_move" href="#"><span>TOP</span></a>
+            <div class="footer_inner">
+
+                <ul class="bottom_menu">
+                    <li><a href="#" title="이용약관">이용약관</a></li>
+                    <li><a href="#" title="개인정보처리방침">개인정보처리방침</a></li>
+                    <li><a href="#" title="이메일무단수집거부">이메일무단수집거부</a></li>
+                </ul>
+                <address>
+                    13817 : 경기도 과천시 상하벌로 110 국립과천과학관<br>
+                    대표전화 : 02 - 3677 - 1500 <br>
+                    Fax : 02 - 3677 - 1328<br>
+                </address>
+                <ul class="sns">
+                    <li><a href="#" title="유투브"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#" title="인스타그램"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="#" title="페이스북"><i class="fa-brands fa-square-facebook"></i></a></li>
+                </ul>
+                <!-- family 사이트                -->
+                <div class="family">
+                    <div class="select">
+                        <a class="arrow" href="#">관련사이트바로가기
+                            <span><i class="fa-solid fa-chevron-up"></i></span>
+                        </a>
+                        <ul class="aList">
+                            <li><a href="https://www.msit.go.kr/index.do" target="_blank"
+                                    title="과학기술정보통신부사이트 새창에 열림">과학기술정보통신부</a></li>
+                            <li><a href="https://www.scicenter.or.kr/" target="_blank"
+                                    title="한국과학관협회사이트 새창에 열림">한국과학관협회</a></li>
+                            <li><a href="https://www.kosac.re.kr/" target="_blank"
+                                    title="한국과학창의재단 사이트 새창에 열림">한국과학창의재단</a></li>
+                            <li><a href="https://www.science.go.kr/mps/index.do" target="_blank"
+                                    title="국립중앙과학관 사이트 새창에 열림">국립중앙과학관</a></li>
+                            <li><a href="https://www.sciport.or.kr/kor/Main.do" target="_blank"
+                                    title="국립부산과학관 사이트 새창에 열림">국립부산과학관</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </footer>
+
+    </div>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

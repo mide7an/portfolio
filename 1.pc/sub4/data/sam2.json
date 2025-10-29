@@ -1,0 +1,103 @@
+{
+    "sam2": [
+        {
+            "Type2": "var(--font-color-main)",
+            "Type": "진행예정",
+            "Name": "함께하는 과학나눔사업",
+            "Date": "2025-11-18 ~ 2025-12-30",
+            "Place": "국립과천과학관",
+            "Target": "전연령",
+            "Price": "70,000원",
+            "Accept": "네이버, 인터파크, 현장판매",
+            "Image": "./images/content2/sub4_content2_1.jpg"
+        },
+        {
+            "Type2": "var(--font-color-main)",
+            "Type": "진행예정",
+            "Name": "창작공방 ON",
+            "Date": "2025-11-05 ~ 2025-12-02",
+            "Place": "창작공방",
+            "Target": "전연령",
+            "Price": "66,000원 | 할인가 : 비지정석 26,400원",
+            "Accept": "상세페이지 참조",
+            "Image": "./images/content2/sub4_content2_2.jpg"
+        },
+        {
+            "Type2": "var(--font-color-point1)",
+            "Type": "잔행중",
+            "Name": "퇴근한 김에 과학관 러닝",
+            "Date": "2025-09-02 ~ 2025-10-06",
+            "Place": "서울전역",
+            "Target": "전연령",
+            "Price": "회차당 15,000원 / 1인 3회까지 신청가능",
+            "Accept": "네이버, 인터파크, 현장판매",
+            "Image": "./images/content2/sub4_content2_3.jpg"
+        },
+        {
+            "Type2": "var(--font-color-point1)",
+            "Type": "진행중",
+            "Name": "퇴근한 김에 과학관",
+            "Date": "2025-09-01 ~ 2025-09-26",
+            "Place": "첨단기술관,천체투영관",
+            "Target": "과학기술인공제회 회원사",
+            "Price": "50,000원",
+            "Accept": "네이버, 인터파크, 현장판매",
+            "Image": "./images/content2/sub4_content2_4.jpg"
+        },
+        {
+            "Type2": "var(--font-color-point1)",
+            "Type": "진행중",
+            "Name": "해피 사이언스 축제",
+            "Date": "2025-08-04 ~ 2025-09-01",
+            "Place": "과학광장",
+            "Target": "전연령",
+            "Price": "66,000원 | 할인가 : 비지정석 26,400원",
+            "Accept": "네이버, 인터파크, 현장판매",
+            "Image": "./images/content2/sub4_content2_5.jpg"
+        },
+        {
+            "Type2": "var(--font-color-main)",
+            "Type": "완료",
+            "Name": "과학으로 물들이기",
+            "Date": "2025-07-02 ~ 2025-07-31",
+            "Place": "서울특별시 및 경기도 지역",
+            "Target": "65세이상 성인단체",
+            "Price": "무료",
+            "Accept": "네이버, 인터파크, 현장판매",
+            "Image": "./images/content2/sub4_content2_6.jpg"
+        },
+        {
+            "Type2": "var(--font-color-main)",
+            "Type": "완료",
+            "Name": "SCIENCE FUTURE SF",
+            "Date": "2025-06-11 ~ 2025-07-06",
+            "Place": "어울림홀",
+            "Target": "시상자 및 수상자, 일반 관람 사전 신청자",
+            "Price": "없음",
+            "Accept": "네이버, 인터파크, 현장판매",
+            "Image": "./images/content2/sub4_content2_7.jpg"
+        },
+        {
+            "Type2": "var(--font-color-main)",
+            "Type": "완료",
+            "Name": "5월 5일 신나는 어린이날",
+            "Date": "2025-05-09 ~ 2025-06-31",
+            "Place": "어울림홀",
+            "Target": "누구나",
+            "Price": "상세페이지 참조",
+            "Accept": "상세페이지 참조",
+            "Image": "./images/content2/sub4_content2_8.jpg"
+        },
+        {
+            "Type2": "var(--font-color-main)",
+            "Type": "완료",
+            "Name": "창작공방 ON",
+            "Date": "2025-04-13 ~ 2025-05-06",
+            "Place": "창작공방",
+            "Target": "전연령",
+            "Price": "66,000원 | 할인가 : 비지정석 26,400원",
+            "Accept": "네이버, 인터파크, 현장판매",
+            "Image": "./images/content2/sub4_content2_9.jpg"
+        }
+    ]
+}
