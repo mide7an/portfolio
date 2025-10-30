@@ -1368,7 +1368,8 @@ section {
   }
 
   .culture .contents .sub_title {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
     margin-bottom: 5px;
     line-height: 1.5rem;
     text-align: center;
@@ -1381,6 +1382,7 @@ section {
     width: 100%;
     margin-bottom: 5px;
     line-height: 1.5rem;
+    display: none;
   }
 
 
@@ -1426,7 +1428,7 @@ section {
 
   .culture .more_btn {
     gap: 3px;
-    padding: 0 15px 0;
+    padding: 5px 15px 7px;
     border: 1px solid var(--font-color-point1);
     font-size: 1.2rem;
     font-weight: 500;
@@ -1475,12 +1477,12 @@ section {
   }
 
   .gastronomy #text dd {
-    margin-top: -10px
+    margin-top: 5px
   }
 
   #content .gastronomy .more_btn {
     gap: 3px;
-    padding: 0 15px 0;
+    padding: 5px 15px 7px;
     border: 1px solid var(--font-color-point1);
     font-size: 1.2rem;
     font-weight: 500;
@@ -1554,7 +1556,7 @@ section {
 
   .nature .more_btn {
     gap: 3px;
-    padding: 0 15px 0;
+    padding: 5px 15px 7px;
     border: 1px solid var(--font-color-point1);
     font-size: 1.2rem;
     font-weight: 500;
@@ -1602,7 +1604,7 @@ section {
 
   .video .more_btn {
     gap: 3px;
-    padding: 0 15px 0;
+    padding: 5px 15px 7px;
     border: 1px solid var(--font-color-point1);
     font-size: 1.2rem;
     font-weight: 500;
@@ -1710,7 +1712,7 @@ section {
 
   .gallery .more_btn {
     gap: 3px;
-    padding: 0 15px 0;
+    padding: 5px 15px 7px;
     border: 1px solid var(--font-color-point1);
     font-size: 1.2rem;
     font-weight: 500;
